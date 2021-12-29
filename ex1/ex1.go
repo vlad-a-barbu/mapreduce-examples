@@ -33,5 +33,6 @@ func Filter(word string) bool {
 }
 
 func Solve(input [][]string) float64 {
-	return mr.MapReduce(input, Filter)
+	acc, _ := mr.MapReduce(input, Filter)
+	return acc
 }
